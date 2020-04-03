@@ -25,6 +25,10 @@ module.exports = {
     menuLinks: [
       {
         name: 'Home',
+        slug: '/home/',
+      },
+      {
+        name: 'Blog',
         slug: '/',
       },
       {

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
-
+// use State and Event, Form of React.js
 /*
   ⚠️ This is an example of a contact form powered with Netlify form handling.
   Be sure to review the Netlify documentation for more information:
@@ -144,6 +144,7 @@ const encode = data => {
 }
 
 class ContactForm extends React.Component {
+  //initial State
   constructor(props) {
     super(props)
     this.state = {
@@ -153,7 +154,7 @@ class ContactForm extends React.Component {
       showModal: false,
     }
   }
-
+  // initial Events
   handleInputChange = event => {
     const target = event.target
     const value = target.value
