@@ -4,14 +4,14 @@ import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 import ContactForm from '../components/ContactForm'
 import SEO from '../components/SEO'
+import HomePage from '../components/nHomePage'
 
-const Home = ({ data }) => {
+const Home = () => {
   return (
     <Layout>
       <SEO title="Home" description="Contact description goes here" />
       <Container>
-        <PageTitle>Home</PageTitle>
-        <ContactForm />
+        <HomePage />
       </Container>
     </Layout>
   )
