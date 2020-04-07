@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
@@ -57,12 +57,24 @@ const Excerpt = styled.p`
   margin: 0 1rem 1rem 1rem;
   line-height: 1.6;
 `
-const ValueA = () => {
-  return (
-    <Value>
-      <Title>This is Value A</Title>
-    </Value>
-  )
+const guideElement = <h1>new element</h1>
+class ValueA extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: 'Your Money or Your Life',
+      description: 'Guide of Personal Finance',
+    }
+  }
+
+  render() {
+    return (
+      <Value>
+        <Title>{this.state.title}</Title>
+        <p>{this.state.description}</p>
+      </Value>
+    )
+  }
 }
 
 export default ValueA
