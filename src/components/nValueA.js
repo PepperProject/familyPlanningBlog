@@ -35,29 +35,19 @@ const Value = styled.li`
     }
   }
 `
-
 const Title = styled.h2`
   font-size: 1.5em;
   font-weight: 600;
   text-transform: capitalize;
   margin: 1rem 1rem 0.5rem 1rem;
 `
-
-const Date = styled.h3`
-  margin: 0 1rem 0.5rem 1rem;
-  color: gray;
+const Button = styled.button`
+  color: turquoise;
+  position: relative;
+  border: 1px solid ${props => props.theme.colors.secondary};
+  border-radius: 2px;
+  margin: 1em 1em 1em 1em;
 `
-
-const ReadingTime = styled.h4`
-  margin: 0 1rem 1.5rem 1rem;
-  color: gray;
-`
-
-const Excerpt = styled.p`
-  margin: 0 1rem 1rem 1rem;
-  line-height: 1.6;
-`
-const guideElement = <h1>new element</h1>
 class ValueA extends Component {
   constructor(props) {
     super(props)
@@ -72,6 +62,7 @@ class ValueA extends Component {
       <Value>
         <Title>{this.state.title}</Title>
         <p>{this.state.description}</p>
+        <Button>Contents</Button>
       </Value>
     )
   }
