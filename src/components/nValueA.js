@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
 const Value = styled.li`
+  flex-direction: colum;
   position: relative;
   border: 1px solid ${props => props.theme.colors.secondary};
   border-radius: 2px;
@@ -41,6 +42,12 @@ const Title = styled.h2`
   text-transform: capitalize;
   margin: 1rem 1rem 0.5rem 1rem;
 `
+const Des = styled.h3`
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1rem 1rem 0.5rem 1rem;
+`
 const Button = styled.button`
   color: turquoise;
   position: relative;
@@ -61,7 +68,7 @@ class ValueA extends Component {
     return (
       <Value>
         <Title>{this.state.title}</Title>
-        <p>{this.state.description}</p>
+        <Des>{this.state.description}</Des>
         <Button>Contents</Button>
       </Value>
     )
