@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-const Wrapper = styled.sectionB`
+const Wrapper = styled.section`
   margin: 0 auto auto;
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
@@ -9,8 +9,8 @@ const Wrapper = styled.sectionB`
   flex-grow: 1;
 `
 
-const Container = props => {
+const ContainerB = props => {
   return <Wrapper>{props.children}</Wrapper>
 }
 
-export default Container
+export default ContainerB

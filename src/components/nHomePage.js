@@ -5,14 +5,14 @@ import styled from '@emotion/styled'
 import MissionStatement from './nMissionStatement'
 import ValueList from './nValueList'
 import Layout from './Layout'
-import Container from './Container'
+import ContainerB from './ContainerB'
 
 const HomePage = () => {
   return (
-    <Container>
+    <ContainerB>
       <MissionStatement />
       <ValueList />
-    </Container>
+    </ContainerB>
   )
 }
 

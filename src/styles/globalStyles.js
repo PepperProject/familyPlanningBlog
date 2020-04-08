@@ -129,6 +129,9 @@ export const globalStyles = css`
   section {
     display: block;
   }
+  sectionB {
+    display: flex;
+  }
 
   @media screen and (min-width: 35em) {
     html {

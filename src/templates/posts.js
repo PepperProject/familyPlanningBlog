@@ -7,6 +7,7 @@ import Container from '../components/Container'
 import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
 import { startCase } from 'lodash'
+import ValueA2 from '../components/nValueA2'
 
 const Posts = ({ data, pageContext }) => {
   const posts = data.allContentfulPost.edges
@@ -44,7 +45,10 @@ const Posts = ({ data, pageContext }) => {
             ))}
           </CardList>
         )}
+
+        <ValueA2 />
       </Container>
+
       <Pagination context={pageContext} />
     </Layout>
   )

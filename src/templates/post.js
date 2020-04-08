@@ -8,6 +8,8 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDetails from '../components/PostDetails'
 import SEO from '../components/SEO'
+import ValueA2 from '../components/nValueA2'
+import Comments from '../components/Comments'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -49,6 +51,8 @@ const PostTemplate = ({ data, pageContext }) => {
           timeToRead={body.childMarkdownRemark.timeToRead}
         />
         <PageBody body={body} />
+        <Comments />
+        <ValueA2 />
       </Container>
       <PostLinks previous={previous} next={next} basePath={basePath} />
     </Layout>
