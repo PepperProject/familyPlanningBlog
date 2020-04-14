@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Container from '../components/Container'
+import ContainerB from '../components/ContainerB'
 import PageBody from '../components/PageBody'
 import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
@@ -45,15 +46,19 @@ const PostTemplate = ({ data, pageContext }) => {
       />
       <Hero title={title} image={heroImage} height={'50vh'} />
       <Container>
-        {tags && <TagList tags={tags} basePath={basePath} />}
-        <PostDetails
-          date={publishDate}
-          timeToRead={body.childMarkdownRemark.timeToRead}
-        />
-        <PageBody body={body} />
-        <Comments />
+        <ContainerB>
+          {tags && <TagList tags={tags} basePath={basePath} />}
+          <PostDetails
+            date={publishDate}
+            timeToRead={body.childMarkdownRemark.timeToRead}
+          />
+          <PageBody body={body} />
+        </ContainerB>
         <ValueA2 />
       </Container>
+      <ContainerB>
+        <Comments />
+      </ContainerB>
       <PostLinks previous={previous} next={next} basePath={basePath} />
     </Layout>
   )
