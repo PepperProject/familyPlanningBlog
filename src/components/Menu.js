@@ -30,6 +30,9 @@ const Nav = styled.nav`
   }
 
   a {
+    display: inline-block;
+
+    margin-left: 1em;
     text-decoration: none;
     color: DarkGray;
     font-weight: 600;
@@ -51,13 +54,14 @@ const Menu = () => {
     <Header>
       <Nav>
         <ul>
-          {menuLinks.map(link => (
-            <li key={link.name}>
-              <Link to={link.slug} activeStyle={activeLinkStyle}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
+          <li>
+            <Link to="/home/" activeStyle={activeLinkStyle}>
+              <a>Lemon Lab</a>
+            </Link>
+            <Link to="/" activeStyle={activeLinkStyle}>
+              <a>Blog</a>
+            </Link>
+          </li>
         </ul>
       </Nav>
     </Header>

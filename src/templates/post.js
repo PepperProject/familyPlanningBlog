@@ -58,6 +58,7 @@ const PostTemplate = ({ data, pageContext }) => {
       </Container>
       <ContainerB>
         <Comments />
+        <ValueA2 />
       </ContainerB>
       <PostLinks previous={previous} next={next} basePath={basePath} />
     </Layout>
